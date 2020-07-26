@@ -1,14 +1,98 @@
 
+@font-face {
+  font-family: 'JR';
+  src: url('../fonts/Jost-Regular.eot');
+  src: url('../fonts/Jost-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Jost-Regular.woff2') format('woff2'),
+      url('../fonts/Jost-Regular.woff') format('woff'),
+      url('../fonts/Jost-Regular.ttf') format('truetype'),
+      url('../fonts/Jost-Regular.svg#Jost-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
-@mixin robR {
-    font-family: 'Roboto Regular', sans-serif;
+@font-face {
+  font-family: 'JM';
+  src: url('../fonts/Jost-Medium.eot');
+  src: url('../fonts/Jost-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Jost-Medium.woff2') format('woff2'),
+      url('../fonts/Jost-Medium.woff') format('woff'),
+      url('../fonts/Jost-Medium.ttf') format('truetype'),
+      url('../fonts/Jost-Medium.svg#Jost-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-@mixin robT {
-    font-family: 'Roboto Thin', sans-serif;
+
+@font-face {
+  font-family: 'Astrum CB';
+  src: url('../fonts/AstrumScriptCyrillic_Bold.eot');
+  src: url('../fonts/AstrumScriptCyrillic_Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AstrumScriptCyrillic_Bold.woff2') format('woff2'),
+      url('../fonts/AstrumScriptCyrillic_Bold.woff') format('woff'),
+      url('../fonts/AstrumScriptCyrillic_Bold.ttf') format('truetype'),
+      url('../fonts/AstrumScriptCyrillic_Bold.svg#AstrumScriptCyrillic_Bold') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
 }
-@mixin robB {
-    font-family: 'Roboto Bold', sans-serif;
+
+@font-face {
+  font-family: 'Astrum CL';
+  src: url('../fonts/AstrumScriptCyrillic_Light.eot');
+  src: url('../fonts/AstrumScriptCyrillic_Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/AstrumScriptCyrillic_Light.woff2') format('woff2'),
+      url('../fonts/AstrumScriptCyrillic_Light.woff') format('woff'),
+      url('../fonts/AstrumScriptCyrillic_Light.ttf') format('truetype'),
+      url('../fonts/AstrumScriptCyrillic_Light.svg#AstrumScriptCyrillic_Light') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
-@mixin robL {
-    font-family: 'Roboto Light', sans-serif;
+
+@font-face {
+  font-family: 'JSB';
+  src: url('../fonts/Jost-SemiBold.eot');
+  src: url('../fonts/Jost-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Jost-SemiBold.woff2') format('woff2'),
+      url('../fonts/Jost-SemiBold.woff') format('woff'),
+      url('../fonts/Jost-SemiBold.ttf') format('truetype'),
+      url('../fonts/Jost-SemiBold.svg#Jost-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JL';
+  src: url('../fonts/Jost-Light.eot');
+  src: url('../fonts/Jost-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Jost-Light.woff2') format('woff2'),
+      url('../fonts/Jost-Light.woff') format('woff'),
+      url('../fonts/Jost-Light.ttf') format('truetype'),
+      url('../fonts/Jost-Light.svg#Jost-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@mixin jl {
+    font-family: 'JL', sans-serif;// light
+}
+@mixin jm {
+    font-family: 'JM', sans-serif;//medium
+}
+@mixin jr {
+    font-family: 'JR', sans-serif;//regular
+}
+@mixin jsb {
+    font-family: 'JSB', sans-serif;//semi-bold
+}
+@mixin ab {
+    font-family: 'Astrum CB', sans-serif;
+}
+@mixin al {
+    font-family: 'Astrum CL', sans-serif;
 }
