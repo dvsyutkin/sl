@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('Jost-Regular.eot');
+    src: url('Jost-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Jost-Regular.woff2') format('woff2'),
+        url('Jost-Regular.woff') format('woff'),
+        url('Jost-Regular.ttf') format('truetype'),
+        url('Jost-Regular.svg#Jost-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('Jost-Medium.eot');
+    src: url('Jost-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Jost-Medium.woff2') format('woff2'),
+        url('Jost-Medium.woff') format('woff'),
+        url('Jost-Medium.ttf') format('truetype'),
+        url('Jost-Medium.svg#Jost-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Astrum CB';
+    src: url('AstrumScriptCyrillic_Bold.eot');
+    src: url('AstrumScriptCyrillic_Bold.eot?#iefix') format('embedded-opentype'),
+        url('AstrumScriptCyrillic_Bold.woff2') format('woff2'),
+        url('AstrumScriptCyrillic_Bold.woff') format('woff'),
+        url('AstrumScriptCyrillic_Bold.ttf') format('truetype'),
+        url('AstrumScriptCyrillic_Bold.svg#AstrumScriptCyrillic_Bold') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Astrum CL';
+    src: url('AstrumScriptCyrillic_Light.eot');
+    src: url('AstrumScriptCyrillic_Light.eot?#iefix') format('embedded-opentype'),
+        url('AstrumScriptCyrillic_Light.woff2') format('woff2'),
+        url('AstrumScriptCyrillic_Light.woff') format('woff'),
+        url('AstrumScriptCyrillic_Light.ttf') format('truetype'),
+        url('AstrumScriptCyrillic_Light.svg#AstrumScriptCyrillic_Light') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('Jost-SemiBold.eot');
+    src: url('Jost-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Jost-SemiBold.woff2') format('woff2'),
+        url('Jost-SemiBold.woff') format('woff'),
+        url('Jost-SemiBold.ttf') format('truetype'),
+        url('Jost-SemiBold.svg#Jost-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('Jost-Light.eot');
+    src: url('Jost-Light.eot?#iefix') format('embedded-opentype'),
+        url('Jost-Light.woff2') format('woff2'),
+        url('Jost-Light.woff') format('woff'),
+        url('Jost-Light.ttf') format('truetype'),
+        url('Jost-Light.svg#Jost-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
