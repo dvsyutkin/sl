@@ -35,16 +35,20 @@
     &__text-box, &__show-more
         padding-left: 4rem
     &__show-more
+        position: absolute
+        bottom: 15px
+        width: 100%
         display: flex
         justify-content: space-between
         align-items: center
         padding-right: 4rem
         padding-left: 4rem
         padding-bottom: 3.6rem
-        a
-            color: #b0b0b0
+        color: #b0b0b0
     &__left-box
-        max-width: 390px
+        .hits__box
+            width: 390px
+                // width: 100%
     &__right
         &-box
             display: flex
@@ -52,15 +56,20 @@
             justify-content: space-between
         &-top
             display: flex
+            .hits__inner .hits__category
+                margin-bottom: 40px
         &-bottom
             .hits__box
                 position: relative
                 height: 292px
+                display: flex
+                flex-direction: column
+                justify-content: center
                 .hits__inner
                     display: flex
                 .hits__box-img
                     position: absolute
-                    top: 0
+                    top: -40px
                     right: 80px   
                     height: 100%
                     img
