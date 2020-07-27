@@ -1,0 +1,64 @@
+.header-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    height: 100px
+
+.header
+    &__block
+        display: flex
+        width: 33.3333%
+        align-items: center
+        &_1
+            min-width: 435px
+        &_2
+            width: 210px
+            align-items: center
+            justify-content: center
+        &_3
+            justify-content: flex-end
+    &__phone
+        margin-right: 45px
+        +jm
+        color: #2c2c2c
+.btn__search
+    min-height: 34px
+    min-width: 34px
+    margin-right: 13px
+    border: none
+    border-radius: 50%
+    background: $primary
+.form__search-input
+    +jr
+    padding-bottom: 5px
+    font-size: 1.4rem
+    border: none
+    border-bottom: 1px solid #E1E1E1
+    &:placeholder
+        color: #9e9e9e
+.header__btn-link
+    position: relative
+    display: block
+    height: 22px
+    margin-right: 37px
+    img
+        width: 100%
+    span
+        display: block
+        position: absolute
+        top: -100%
+        right: -10px
+        width: 17px
+        height: 17px
+        text-align: center
+        background: $primary
+        border-radius: 50%
+        color: #ffffff
+        font-size: 1.1rem
+        +jm
+        line-height: 1.6rem
+.header__login
+    color: #000000
+    +jr 
+    border-bottom: 1px solid #000000

@@ -1,0 +1,23 @@
+.nav
+    background: $second
+    &__list
+        display: flex
+        padding: 22px 0
+        justify-content: space-between
+        align-items: center
+        +jr
+    &__link
+        position: relative
+        color: #ffffff
+        img
+            margin-left: 10px
+        &_active::after
+            content: ''
+            position: absolute
+            bottom: -19px
+            left: 0
+            height: 2px
+            width: 100%
+            background: $primary
+
+    
