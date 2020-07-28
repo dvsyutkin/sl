@@ -1,0 +1,126 @@
+.card
+    &__box
+        position: relative
+        width: 390px
+        height: 507px
+        transition: 0.3s
+        &:hover
+            transform: translateY(-10px)
+    &__img-box
+        position: relative
+        width: 100%
+        height: 400px
+        background: #F3F3F3
+        border: 1px solid #F3F3F3
+        transition: 0.5s
+        img
+            width: 100%
+            // object-fit: cover
+        &:hover
+            border: 1px solid #EEEEEE
+            background: transparent  
+            .card__link-box
+                opacity: 1
+    &__like
+        z-index: 1
+        position: absolute
+        width: 22px
+        height: 22px
+        top: 20px
+        right: 20px
+        background: url('../img/heart-grey.svg') center no-repeat
+        background-size: contain
+        &:hover
+            cursor: pointer
+    &__star-box
+        position: absolute
+        bottom: 20px
+        left: 20px
+        display: flex
+        li
+            margin-right: 6px
+            height: 14px
+            width: 14px
+            background: url('../img/star-grey.svg') center no-repeat
+            background-size: contain
+            &:hover
+                cursor: pointer
+        .star__gold
+            background: url('../img/star-solid.svg') center no-repeat
+            background-size: contain
+    &__link-box
+        position: absolute
+        display: flex
+        bottom: 20px
+        right: 20px
+        opacity: 0
+        transition: 0.3s
+    &__btn
+        position: relative
+        padding: 8px 14px 8px 36px
+        +jr
+        font-size: 1.2rem
+        border: 1px solid #1B181D
+        border-radius: 18px
+        background: transparent
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 14px
+            width: 14px
+            height: 14px
+            transform: translateY(-50%)       
+        &_video
+            color: #ffffff
+            background: #1B181D
+            &::before
+                background: url('../img/play-icon.svg') center no-repeat
+                background-size: contain
+        &_photo
+            margin-left: 10px
+            color: #1B181D
+            &::before
+                background: url('../img/camera-icon.svg') center no-repeat
+                background-size: contain
+    &__name
+        display: inline-block
+        margin-top: 2.2rem
+        margin-bottom: 1.6rem
+        max-width: 343px
+        color: #000000
+        font-size: 1.8rem
+        line-height: 2.2rem
+        &:hover
+            color: $primary
+    &__price
+        display: flex
+        align-items: center
+        +jsb
+        font-size: 1.8rem
+        color: $second
+        img
+            margin-left: 8px
+            max-width: 18px
+        &-box
+            position: relative
+    &__add-cart
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translateY(-50%)
+        color: $primary
+        +jm
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -28px
+            width: 20px
+            height: 20px
+            background: url('../img/cart-red.svg') center no-repeat
+            background-size: contain
+.like
+    background: url('../img/heart-red.svg') center no-repeat
+    background-size: contain
