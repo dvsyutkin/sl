@@ -1,0 +1,65 @@
+.info
+    &__wrap
+        max-width: 598px
+        padding: 12rem 0
+    &__subtitle
+        margin-bottom: 2rem
+        +al
+        font-size: 3rem
+        color: $second
+    &__title
+        margin-bottom: 2.2rem
+        +jr
+        font-size: 4.8rem
+        line-height: 6rem
+        color: $second
+    &__text
+        +jl
+        font-size: 2rem
+        color: #4F4F4F
+        line-height: 3rem
+    &__cit
+        margin-top: 10rem
+        margin-bottom: 1.5rem
+        +al
+        font-size: 2rem
+        color: $second
+    &__link
+        color: $primary
+        font-size: 1.4rem
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+    
+        
+        
+
+.summer, .sapphire
+    position: relative
+    .info__banner
+        position: absolute
+        top: 0
+        p
+            position: absolute
+            display: block
+            top: 38%
+            +jt
+            font-size: 19rem
+            transform: rotate(-90deg)
+            text-transform: uppercase
+            color: #C4C4C4
+
+.summer
+    .info__banner
+        right: 0
+        p
+            left: -60%
+
+.sapphire
+    .info__banner
+        left: 0
+        p
+            right: -60%
+    .info__wrap
+        max-width: auto
+        margin-left: 60%

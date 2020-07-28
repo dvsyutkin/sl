@@ -3,7 +3,6 @@ window.addEventListener('DOMContentLoaded', function () {
     // слайдер компаний
     const sliderTops = $('.tops__wrap .owl-carousel');
     sliderTops.owlCarousel($.extend({}, {
-        nav: false,
         dots: true,
         margin: 50,
         loop: true,
@@ -21,9 +20,10 @@ window.addEventListener('DOMContentLoaded', function () {
             1440: {
                 items: 4.5
             }
-        },
+        }
 
     }));
+
 
 
 });

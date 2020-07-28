@@ -77,7 +77,37 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'JTI';
+  src: url('../fonts/Jost-ThinItalic.eot');
+  src: url('../fonts/Jost-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Jost-ThinItalic.woff2') format('woff2'),
+      url('../fonts/Jost-ThinItalic.woff') format('woff'),
+      url('../fonts/Jost-ThinItalic.ttf') format('truetype'),
+      url('../fonts/Jost-ThinItalic.svg#Jost-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'JT';
+  src: url('../fonts/Jost-Thin.eot');
+  src: url('../fonts/Jost-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Jost-Thin.woff2') format('woff2'),
+      url('../fonts/Jost-Thin.woff') format('woff'),
+      url('../fonts/Jost-Thin.ttf') format('truetype'),
+      url('../fonts/Jost-Thin.svg#Jost-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@mixin jt {
+    font-family: 'JT', sans-serif;// light
+}
 @mixin jl {
     font-family: 'JL', sans-serif;// light
 }
