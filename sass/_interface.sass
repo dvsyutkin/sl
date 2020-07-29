@@ -24,8 +24,15 @@ a
 			margin-bottom: -1.5rem
 			margin-right: 2rem
 			transform: rotateY(180deg) 
+	.section__arrow
+        svg path
+            transition: 0.9s
+        &:hover svg path
+            fill: $primary
 
-.tops__wrap .owl-carousel .owl-stage-outer
+.tops__wrap .owl-carousel .owl-stage-outer,
+.stock__wrap .owl-carousel .owl-stage-outer,
+.order__wrap .owl-carousel .owl-stage-outer
 	overflow: inherit
 
 	// owl slider
@@ -37,8 +44,6 @@ a
 	border-radius: 0
 	background: #E0E0E0
 .owl-theme .owl-dots .owl-dot.active span
-	// width: 15px
-	// height: 15px
 	background: $primary
 	border: 2px solid #fff
 	outline: 1px solid rgba(240, 41, 41, 0.17)

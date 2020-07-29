@@ -15,7 +15,7 @@
         transition: 0.5s
         img
             width: 100%
-            // object-fit: cover
+            object-fit: none
         &:hover
             border: 1px solid #EEEEEE
             background: transparent  
@@ -121,6 +121,15 @@
             height: 20px
             background: url('../img/cart-red.svg') center no-repeat
             background-size: contain
+    &__sale-box
+        position: absolute
+        top: 15px
+        left: -5px
+        padding: 6px 19px
+        +jm
+        background: #F4D118
+        color: #ffffff
+        line-height: 29px
 .like
     background: url('../img/heart-red.svg') center no-repeat
     background-size: contain
