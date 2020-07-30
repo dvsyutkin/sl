@@ -11,6 +11,7 @@
         color: #ffffff
         img
             margin-left: 10px
+            transition: 0.3s
         &_active::after
             content: ''
             position: absolute
@@ -19,5 +20,14 @@
             height: 2px
             width: 100%
             background: $primary
+    &__wrap
+        position: relative
+
+.dropdown:hover img
+    transform: rotate(180deg)
+    
+.nav__list .dropdown:hover .catalog
+    opacity: 1
+    visibility: visible
 
     

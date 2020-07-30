@@ -23,7 +23,6 @@
         display: flex
         align-items: center 
         input
-            position: relative
             margin-right: 8px
             padding-left: 30px
             height: 74px
@@ -31,17 +30,6 @@
             border: 1px solid #ffffff
             width: 311px
             background: transparent
-            &::after
-                content: ''
-                position: absolute
-                right: 0
-                top: 0
-                width: 16px
-                height: 16px
-                background: #ffffff
-                // background-size: contain
-            // &::placeholer
-            //     color: #9A9A9A
         button
             position: relative
             height: 74px
@@ -89,6 +77,7 @@
             +jm
             color: #ffffff
     &__contacts-phone
+        margin-left: 11rem
         a
             margin-bottom: 1rem
             +jm
@@ -118,4 +107,27 @@
             color: #ffffff
         img
             margin-left: 1.1rem
-        
+    &__menu
+        &-box
+            display: flex
+        &-list:first-child
+            margin-right: 9rem
+        &-item
+            margin-bottom: 2.5rem
+    &__input-wrap
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            right: 30px
+            top: 50%
+            width: 16px
+            height: 16px
+            background: url('../img/footer/phone-icon.svg')center no-repeat
+            background-size: contain
+            transform: translateY(-50%)
+            // &::placeholer
+        //     color: #310909
+            
+
+

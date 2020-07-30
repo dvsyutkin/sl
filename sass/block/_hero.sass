@@ -1,7 +1,6 @@
 .hero
     position: relative
     margin-top: 4rem
-    padding: 17rem 0
     background: url(../img/hero/bg.jpg) top center no-repeat
     color: #ffffff
     &__subtitle
@@ -30,6 +29,7 @@
             color: $primary
     &__slider
         position: relative
+        padding: 17rem 0
     &__img-box
         position: absolute
         right: -10%
@@ -37,16 +37,26 @@
         transform: translateY(-50%)
     &__box
         position: relative
-.counter__box
-    position: absolute
-    top: 50px
-    +jl
-    color: #808080
-    font-size: 1.8rem
-    span
-        color: #ffffff
-        font-size: 3.4rem
+    
+.nav__box .hero__arrow
+    svg path
+        transition: 0.9s
+    &:hover svg path
+        fill: $primary
+            
+.counter
+    color: #ffffff
+    font-size: 3.4rem
+    &__box
+        position: absolute
+        top: 50px
+        +jl
+        color: #808080
+        font-size: 1.8rem
+    
+        
 .nav__box
+    z-index: 99
     position: absolute
     bottom: 50px
 .hero__arrow
