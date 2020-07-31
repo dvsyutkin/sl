@@ -509,7 +509,15 @@ a {
   margin-right: 0 !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
+  .tops__wrap .owl-carousel .owl-stage-outer,
+  .stock__wrap .owl-carousel .owl-stage-outer,
+  .order__wrap .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 970px) {
   html {
     font-size: 9px;
   }
@@ -542,11 +550,14 @@ a {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 970px) {
   .container {
-    max-width: 960px;
+    max-width: 851px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .container-fluid {
+    max-width: 100%;
   }
 }
 
@@ -649,6 +660,15 @@ a {
   color: #000000;
   font-family: 'JR', sans-serif;
   border-bottom: 1px solid #000000;
+}
+
+@media (max-width: 970px) {
+  .form__search-input {
+    display: none;
+  }
+  .header__block_1 {
+    min-width: auto;
+  }
 }
 
 .nav {
@@ -1125,6 +1145,12 @@ a {
 .like {
   background: url("../img/heart-red.svg") center no-repeat;
   background-size: contain;
+}
+
+@media (max-width: 970px) {
+  .card__box:hover {
+    transform: translateY(0);
+  }
 }
 
 .info__wrap {
