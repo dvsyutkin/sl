@@ -7,7 +7,7 @@
     padding: 25px 0 33px 30px
     background: #fff  
     box-shadow: 0px 15px 29px rgba(0, 0, 0, 0.22)
-    opacity: 0.4
+    opacity: 0
     visibility: hidden
     transition: 0.2s
     &__title  
@@ -31,5 +31,20 @@
         a
             color: #6B6B6B
             font-size: 1.4rem
+            &:hover
+                color: $primary
+
+@media (max-width: 992px)
+    .catalog
+        &__wrap
+           max-height: 720px
+           flex-direction: row
+        &__box
+            width: 33%
+    .menu-mob .catalog__item
+        margin-bottom: 15px
+        a
+            font-size: 18px
+            color: $second
             &:hover
                 color: $primary

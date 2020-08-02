@@ -26,8 +26,80 @@
 .dropdown:hover img
     transform: rotate(180deg)
     
-.nav__list .dropdown:hover .catalog
+.dropdown:hover .catalog
     opacity: 1
     visibility: visible
 
+
+// моб. меню
+.nav__list_mob
+    a
+        color: #ffffff
+.nav__wrap-mob
+    display: none
+    position: relative
+    justify-content: space-between
+    align-items: center
+    color: #ffffff
+.mob__catalog-btn, .btn-menu
+    display: flex
+    align-items: center
+    background: transparent
+    color: #ffffff
+    font-size: 14px
+    border: none
+.mob__catalog-btn svg
+    margin-right: 12px
+.btn-menu svg 
+    margin-left: 12px
+.mob__catalog-btn-box
+    padding: 16px 20px
+    max-width: 184px
+    transition: 0.2s
+    &:hover
+        background: $primary
+.mob__menu-box
+    display: flex
+    align-items: center
+.nav__list_mob
+    display: flex
+    li  
+        margin-left: 42px
+        font-size: 16px
+.btn-menu
+    padding: 16px 20px
+    max-width: 184px
+    transition: 0.2s
+    &:hover
+        background: $primary
+.menu-mob
+    z-index: 9999
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    padding: 25px 0 33px 30px
+    background: #fff  
+    box-shadow: 0px 15px 29px rgba(0, 0, 0, 0.22)
+    opacity: 0
+    visibility: hidden
+    transition: 0.2s
+    .catalog__list
+        max-height: 104px
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+
+.menu-mob__dropdown:hover .menu-mob
+    opacity: 1
+    visibility: visible
+
+
+@media (max-width: 992px)
+    .nav
+        &__wrap
+            display: none
+            &-mob
+                display: flex
+            
     

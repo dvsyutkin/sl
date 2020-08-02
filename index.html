@@ -11,14 +11,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container-fluid">
             <div class="header-top">
                 <div class="header__block header__block_1">
                     <a href="tel:+79229667242" class="header__phone">+7 (922) 966 - 72 - 42</a>
-                    <button class="btn__search"><img src="img/search.svg" alt=""></button>
-                    <form action="" class="form__search">
-                        <input type="text" name="search" placeholder="Поиск товаров..." class="form__search-input">
-                    </form>
+                    <div class="search-box">
+                        <button class="btn__search"><img src="img/search.svg" alt=""></button>
+                        <form action="" class="form__search">
+                            <input type="text" name="search" placeholder="Поиск товаров..." class="form__search-input">
+                        </form>
+                    </div>
                 </div>
                 <!-- /.header__block-->
                 <div class="header__block header__block_2">
@@ -38,7 +40,7 @@
             
         </div>
         <nav class="nav">
-            <div class="container">
+            <div class="container container-fluid">
                 <div class="nav__wrap">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link nav__link_active">Главная</a></li>
@@ -159,14 +161,168 @@
                         <li class="nav__item"><a href="#" class="nav__link">Бонусная программа</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
                     </ul>
-                    
+                </div>
+                <div class="nav__wrap-mob">
+                    <div class="mob__catalog-btn-box dropdown">
+                        <button class="mob__catalog-btn ">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.89831 0H0.796861C0.444669 0 0.15918 0.285489 0.15918 0.637682V5.73914C0.15918 6.09133 0.444669 6.37682 0.796861 6.37682H5.89831C6.2505 6.37682 6.53599 6.09133 6.53599 5.73914V0.637682C6.53599 0.285489 6.2505 0 5.89831 0Z" fill="white"/>
+                                <path d="M13.5506 0H8.4492C8.09701 0 7.81152 0.285489 7.81152 0.637682V5.73914C7.81152 6.09133 8.09701 6.37682 8.4492 6.37682H13.5506C13.9028 6.37682 14.1883 6.09133 14.1883 5.73914V0.637682C14.1883 0.285489 13.9028 0 13.5506 0Z" fill="white"/>
+                                <path d="M5.89831 7.65219H0.796861C0.444669 7.65219 0.15918 7.93768 0.15918 8.28987V13.3913C0.15918 13.7435 0.444669 14.029 0.796861 14.029H5.89831C6.2505 14.029 6.53599 13.7435 6.53599 13.3913V8.28987C6.53599 7.93768 6.2505 7.65219 5.89831 7.65219Z" fill="white"/>
+                                <path d="M13.5506 7.65219H8.4492C8.09701 7.65219 7.81152 7.93768 7.81152 8.28987V13.3913C7.81152 13.7435 8.09701 14.029 8.4492 14.029H13.5506C13.9028 14.029 14.1883 13.7435 14.1883 13.3913V8.28987C14.1883 7.93768 13.9028 7.65219 13.5506 7.65219Z" fill="white"/>
+                                <path d="M21.2025 0H16.1011C15.7489 0 15.4634 0.285489 15.4634 0.637682V5.73914C15.4634 6.09133 15.7489 6.37682 16.1011 6.37682H21.2025C21.5547 6.37682 21.8402 6.09133 21.8402 5.73914V0.637682C21.8402 0.285489 21.5546 0 21.2025 0Z" fill="white"/>
+                                <path d="M21.2025 7.65219H16.1011C15.7489 7.65219 15.4634 7.93768 15.4634 8.28987V13.3913C15.4634 13.7435 15.7489 14.029 16.1011 14.029H21.2025C21.5547 14.029 21.8402 13.7435 21.8402 13.3913V8.28987C21.8402 7.93768 21.5546 7.65219 21.2025 7.65219Z" fill="white"/>
+                                <path d="M5.89831 15.6232H0.796861C0.444669 15.6232 0.15918 15.9087 0.15918 16.2609V21.3623C0.15918 21.7145 0.444669 22 0.796861 22H5.89831C6.2505 22 6.53599 21.7145 6.53599 21.3623V16.2609C6.53599 15.9087 6.2505 15.6232 5.89831 15.6232Z" fill="white"/>
+                                <path d="M13.5506 15.6232H8.4492C8.09701 15.6232 7.81152 15.9087 7.81152 16.2609V21.3623C7.81152 21.7145 8.09701 22 8.4492 22H13.5506C13.9028 22 14.1883 21.7145 14.1883 21.3623V16.2609C14.1883 15.9087 13.9028 15.6232 13.5506 15.6232Z" fill="white"/>
+                                <path d="M21.2025 15.6232H16.1011C15.7489 15.6232 15.4634 15.9087 15.4634 16.2609V21.3623C15.4634 21.7145 15.7489 22 16.1011 22H21.2025C21.5547 22 21.8402 21.7145 21.8402 21.3623V16.2609C21.8402 15.9087 21.5546 15.6232 21.2025 15.6232Z" fill="white"/>
+                            </svg>
+                            <span>Каталог товаров</span>
+                        </button>
+                        <div class="catalog">
+                            <p class="catalog__title">Каталог товаров</p>
+                            <div class="catalog__wrap">
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Обручальные кольца</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые кольца</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные кольца</a></li>
+                                        <li class="catalog__item"><a href="#">С гравировкой</a></li>
+                                        <li class="catalog__item"><a href="#">С дизайном</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Подвески</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Подвески на подарок</a></li>
+                                        <li class="catalog__item"><a href="#">Индивидуальные подвески</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Серьги</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые серьги</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Серьги из платины</a></li>
+                                        <li class="catalog__item"><a href="#">Коллекция 2020</a></li>
+                                        <li class="catalog__item"><a href="#">Подарочные варианты</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Запанки</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые запанки</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные</a></li>
+                                        <li class="catalog__item"><a href="#">Платиновые</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Обручальные кольца</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые кольца</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные кольца</a></li>
+                                        <li class="catalog__item"><a href="#">С гравировкой</a></li>
+                                        <li class="catalog__item"><a href="#">С дизайном</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Подвески</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Подвески на подарок</a></li>
+                                        <li class="catalog__item"><a href="#">Индивидуальные подвески</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Серьги</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые серьги</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Серьги из платины</a></li>
+                                        <li class="catalog__item"><a href="#">Коллекция 2020</a></li>
+                                        <li class="catalog__item"><a href="#">Подарочные варианты</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Запанки</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые запанки</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные</a></li>
+                                        <li class="catalog__item"><a href="#">Платиновые</a></li>
+                                    </ul>
+                                </div>
+    
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Обручальные кольца</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые кольца</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные кольца</a></li>
+                                        <li class="catalog__item"><a href="#">С гравировкой</a></li>
+                                        <li class="catalog__item"><a href="#">С дизайном</a></li>
+                                    </ul>
+                                </div>
+            
+                                <div class="catalog__box">
+                                    <h4 class="catalog__name">Подвески</h4>
+                                    <ul class="catalog__list">
+                                        <li class="catalog__item"><a href="#">Золотые с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Серебрянные с камнями</a></li>
+                                        <li class="catalog__item"><a href="#">Подвески на подарок</a></li>
+                                        <li class="catalog__item"><a href="#">Индивидуальные подвески</a></li>
+                                    </ul>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mob__menu-box">
+                        <ul class="nav__list_mob">
+                            <li><a href="#">Под заказ</a></li>
+                            <li><a href="#">Акции/Новости</a></li>
+                            <li><a href="#">Эксклюзив</a></li>
+                        </ul>
+                        <div class="menu-mob__dropdown">
+                            <button class="btn-menu">
+                            Меню <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.0625 11.0625H0.9375C0.419719 11.0625 0 11.4822 0 12C0 12.5178 0.419719 12.9375 0.9375 12.9375H23.0625C23.5803 12.9375 24 12.5178 24 12C24 11.4822 23.5803 11.0625 23.0625 11.0625Z" fill="white"/>
+                                <path d="M23.0625 3.5625H0.9375C0.419719 3.5625 0 3.98222 0 4.5C0 5.01778 0.419719 5.4375 0.9375 5.4375H23.0625C23.5803 5.4375 24 5.01778 24 4.5C24 3.98222 23.5803 3.5625 23.0625 3.5625Z" fill="white"/>
+                                <path d="M23.0625 18.5625H0.9375C0.419719 18.5625 0 18.9822 0 19.5C0 20.0178 0.419719 20.4375 0.9375 20.4375H23.0625C23.5803 20.4375 24 20.0178 24 19.5C24 18.9822 23.5803 18.5625 23.0625 18.5625Z" fill="white"/>
+                                </svg>
+                        </button>
+                        <div class="menu-mob">
+                            <p class="catalog__title">Меню</p>
+                            <ul class="catalog__list">
+                                <li class="catalog__item"><a href="#">Главная</a></li>
+                                <li class="catalog__item"><a href="#">О компании</a></li>
+                                <li class="catalog__item"><a href="#">Под заказ</a></li>
+                                <li class="catalog__item"><a href="#">Акции и новости</a></li>
+                                <li class="catalog__item"><a href="#">Эксклюзив</a></li>
+                                <li class="catalog__item"><a href="#">Доставка и оплата</a></li>
+                                <li class="catalog__item"><a href="#">Программа лояльности</a></li>
+                                <li class="catalog__item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                        
+
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <!-- /.header -->
 
-    <main class="main">
+    <main  class="main">
         <section  class="section hero">
             <div class="hero-box">
                 <div class="container">
@@ -249,7 +405,7 @@
         </section>
         <!-- /.section hero -->
 
-        <section class="section hits">
+        <section  style="display: none;" class="section hits">
             <div class="container">
                 <h2 class="section__title">Популярные категории</h2>
                 <div class="more"><a href="#">Перейти в каталог <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -320,7 +476,7 @@
         </section>
         <!-- /.section hits -->
 
-        <section class="section tops">
+        <section  style="display: none;" class="section tops">
             <div class="container">
                 <h2 class="section__title">ТОП - предложения</h2>
                 <div class="section__arrow-box">
@@ -488,7 +644,7 @@
         </section>
         <!-- /.section tops -->
 
-        <section class="section info summer">
+        <section  style="display: none;" class="section info summer">
             <div class="container">
                 <div class="info__wrap">
                     <p class="info__subtitle">Ваш летний образ!</p>
@@ -506,7 +662,7 @@
         </section>
          <!-- /.section info summer -->
 
-        <section class="section info sapphire">
+        <section  style="display: none;" class="section info sapphire">
             <div class="info__wrap">
                 <p class="info__subtitle">Презентация новых комплектов</p>
                 <h2 class="info__title">Мы запускаем новую линейку комплектов 2020</h2>
@@ -523,7 +679,7 @@
          <!-- /.section info summer -->
 
 
-        <section class="section about">
+        <section  style="display: none;" class="section about">
             <div class="about__desc">
                 <p class="about__name">Sergey Slotin</p>
                 <h2 class="about__title">Немного о нашем бренде</h2>
@@ -533,7 +689,7 @@
         </section>
         <!-- /.section about -->
 
-        <section class="section stock">
+        <section style="display: none;"  class="section stock">
             <div class="container">
                 <h2 class="section__title">Акционные предложение</h2>
                 <div class="section__arrow-box">
@@ -680,7 +836,7 @@
         </section>
         <!-- /.section stock -->
 
-        <section class="section order">
+        <section style="display: none;" class="section order">
             <div class="container">
                 <h2 class="section__title">Товары под заказ</h2>
                 <div class="section__arrow-box">
