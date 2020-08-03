@@ -225,8 +225,35 @@
         &__soc-list
             display: none
             &_m
-                display: block
-        &__menu-list
-            width: 50%
-            &:first-child
-                margin-right: 0
+                display: flex
+                width: 100%
+                justify-content: center
+                margin-top: 0
+        &__menu
+            &-list
+                width: 60%
+                &:first-child
+                    margin-right: 0
+                    width: 40%
+            &-box
+                width: 100%
+        &__contacts-box
+            justify-content: flex-end
+        &__phone-box
+            flex-direction: column
+            a
+                font-size: 12px
+                &:first-child
+                    margin-right: 0
+                    margin-bottom: 10px
+        &__contacts-email
+            margin-left: 35px
+            a
+                font-size: 12px
+        &__info
+            margin-top: 34px
+            justify-content: center
+            &-copy
+                margin-top: 26px
+            &-inn
+                margin-bottom: 26px
