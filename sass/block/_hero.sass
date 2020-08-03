@@ -76,3 +76,42 @@
         width: 80%
     .hero__img-box
         right: -35%    
+
+@media ( max-width: 768px)
+    .hero
+        margin-top: 0
+    .hero__img-box
+        top: 45%
+        right: -69%  
+    .owl-carousel .owl-item img
+        width: 60%
+    .hero
+        &__btn-link
+            font-size: 16px
+        &__title
+            font-size: 30px
+
+@media ( max-width: 600px )
+    .hero__slider
+        padding: 95px 0
+    .hero__img-box
+        display: none
+    .hero__slider
+        text-align: center
+    .hero__title
+        font-size: 25px
+    .hero__text
+        font-size: 14px
+    .counter__box, .nav__box
+        left: 50%
+        transform: translateX(-50%)
+    .counter__box
+        top: 35px
+    .nav__box
+        bottom: 35px
+    .hero__btn-link
+        display: block
+    .hero
+        background: url(../img/hero/bg.jpg) top no-repeat
+        background-size: cover
+    

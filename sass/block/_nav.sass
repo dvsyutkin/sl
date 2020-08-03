@@ -53,6 +53,7 @@
 .btn-menu svg 
     margin-left: 12px
 .mob__catalog-btn-box
+    min-width: 183px
     padding: 16px 20px
     max-width: 184px
     transition: 0.2s
@@ -93,6 +94,8 @@
 .menu-mob__dropdown:hover .menu-mob
     opacity: 1
     visibility: visible
+.nav__search-box
+    display: none
 
 
 @media (max-width: 992px)
@@ -102,4 +105,35 @@
             &-mob
                 display: flex
             
+@media (max-width: 768px)
+    .nav__list_mob
+        display: none
+    .nav__search-box
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 60%
+    .nav-form__search
+        display: flex
+        width: 80%
+        max-width: 368px
+        align-items: center
+    .form__search-input
+        width: 80%
+        margin-right: 28px
+        background: transparent
+        +jr
+        font-size: 14px
+        color: #9E9E9E
+        border-bottom: 1px solid #36303A
+
+@media ( max-width: 600px )
+    .nav__search-box
+        display: none
+    .btn-menu
+        p
+            display: none
+        svg
+            margin-left: 0
+
     

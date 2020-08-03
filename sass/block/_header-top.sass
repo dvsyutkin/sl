@@ -96,4 +96,42 @@
     .header-top
         padding: 0 25px
 
+@media (max-width: 768px)
+    .header-top
+        height: 80px
+    .header__phone
+        font-size: 14px
+        margin-right: 0
+    .search-box
+        display: none
+    .header__block_2
+        width: 160px
+        .logo__box
+            width: 100%
+            a
+                display: block
+                width: 100%
+                img
+                    width: 100%
+    .header__btn-link
+        height: 18px
+        margin-right: 24px
+
+@media (max-width: 600px)
+    .header
+        &-top
+            flex-wrap: nowrap
+            padding: 0 20px
+        &__phone
+            display: none
+        &__block_2
+            width: 115px
+    .search-box
+        display: flex
+    .header__btn-link:first-child, .header__login
+        display: none
+    .header__block_1, .header__block_3
+        width: auto
+    .header__btn-link:nth-child(2)
+        margin-right: 10px
     
