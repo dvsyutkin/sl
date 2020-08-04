@@ -5,7 +5,6 @@
         justify-content: space-between
     &__box
         position: relative
-        margin-right: 1.5rem
         margin-bottom: 1.5rem
         background: #fafafa
         height: 600px
@@ -45,46 +44,67 @@
         padding-left: 4rem
         padding-bottom: 3.6rem
         color: #b0b0b0
+    // левый блок
     &__left-box
+        min-width: 390px
+        margin-right: 1.5rem
+        .hits__box-img
+            position: absolute
+            top: 20px
+            left: 0
+            width: 100%
+        .hits__text-box
+            position: absolute
+            bottom: 50px    
+
+    // правый блок
+    &__right-box
+        width: 100%
+        max-width: 790px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    // верхняя часть правого блока
+    &__right-top
+        display: flex
+        justify-content: space-between
         .hits__box
-            width: 390px
-    &__right
-        &-box
+            position: relative
+            width: 49%
+            height: 292px
+        .hits__text-box
+            position: absolute
+            bottom: 50px
+        .hits__box-img
+            position: absolute
+            top: 0
+            right: 0
+            width: 215px
+            height: 215px
+
+    // нижняя часть правого блока
+    &__right-bottom
+        .hits__box
+            position: relative
+            height: 292px
             display: flex
             flex-direction: column
-            justify-content: space-between
-        &-top
-            display: flex
-            .hits__inner .hits__category
-                margin-bottom: 40px
-        &-bottom
-            .hits__box
-                position: relative
-                height: 292px
-                display: flex
-                flex-direction: column
-                justify-content: center
-                .hits__inner
-                    display: flex
-                .hits__box-img
-                    position: absolute
-                    top: -40px
-                    right: 80px   
-                    height: 100%
-                    img
-                        object-fit: contain
-    &__inner
-        display: flex
-        align-items: flex-end
-        .hits__category
-            margin-bottom: 0
+            justify-content: center
+        .hits__box-img
+            position: absolute
+            top: -40px
+            right: 80px   
+            height: 100%
+            img
+                object-fit: contain
+        .hits__text-box
+            position: absolute
+            bottom: 50px
 
-.hits__box_horiz 
-    height: 292px
-    .hits__show-more
-        margin-top: 2.2rem
-
-
+    // одиночный блок
+    &__single-bottom
+        display: none
+        position: relative
 
     
 .more
@@ -101,3 +121,96 @@
                 fill: $primary
     svg
        margin-left: 2rem
+    &-m
+        display: none
+
+@media ( max-width: 1140px )
+    .hits__right-top
+        .hits__box-img
+            height: 175px
+            width: 175px
+    .hits__right-bottom 
+        .hits__box-img
+            right: 0
+
+@media ( max-width: 992px )
+    .hits__right-top
+        flex-direction: column
+        .hits__box-img
+            height: 215px
+            width: 215px
+    .hits__right-top .hits__box
+        width: 100%
+    .hits__right-bottom
+        display: none
+    .hits__single-bottom
+        display: block
+
+@media (max-width: 768px)
+    .hits
+        &__left-box
+            min-width: 310px
+            .hits__box-img
+                top: 50px
+            .hits__text-box
+                bottom: 50px    
+            .hits__box
+                height: 507px
+    .hits__right-top .hits__box
+        height: 247px
+        overflow: hidden
+    .hits__right-top .hits__box-img
+        height: 175px
+        width: 175px
+        right: -45px
+    .hits__right-bottom .hits__box
+        height: 247px
+    .hits__right-bottom .hits__box-img
+        height: 211px
+        width: 211px
+        top: 50%
+        transform: translateY(-50%)
+
+@media ( max-width: 600px )
+    .hits .container
+        position: relative
+    .more
+        display: none
+    .more-m
+        display: block    
+        text-align: left
+        margin-top: 25px
+        a
+            display: flex
+            justify-content: space-between
+            align-items: center
+            svg
+                margin-left: 0
+    .hits__wrap
+        flex-direction: column
+    .hits__left-box
+        min-width: 100%
+        margin-right: 0
+        .hits__box
+            overflow: hidden
+            height: 240px
+            width: 100%
+            &-img
+                left: auto
+                right: -20px
+                top: -20px
+                width: 180px
+                height: 180px
+    .hits__right-top .hits__box-img
+        right: -20px
+        top: -20px
+        width: 180px
+        height: 180px
+    .hits__right-top .hits__box
+        height: 240px
+    .hits__right-bottom .hits__box-img
+        right: -20px
+        top: -20px
+        width: 180px
+        height: 180px
+        transform: translateY(0)

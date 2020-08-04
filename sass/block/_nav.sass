@@ -86,15 +86,17 @@
     visibility: hidden
     transition: 0.2s
     .catalog__list
-        max-height: 104px
         display: flex
         flex-direction: column
         flex-wrap: wrap
+        max-height: 104px
 
 .menu-mob__dropdown:hover .menu-mob
     opacity: 1
     visibility: visible
 .nav__search-box
+    display: none
+.menu-mob__login, .menu-mob__phone, .menu-mob__chosen-box
     display: none
 
 
@@ -135,5 +137,49 @@
             display: none
         svg
             margin-left: 0
+    .menu-mob
+        .catalog__list
+            max-height: 100%
+        &__login, &__phone
+            display: block
+        &__login
+            font-size: 16px
+            margin-bottom: 30px
+            color: $second
+            &:hover
+                color: $primary
+        &__phone
+            margin-bottom: 30px
+            +jm
+            font-size: 16px
+            color: #2C2C2C
+        &__chosen-box
+            display: flex
+            align-items: flex-end
+        &__chosen-img
+            position: relative
+            height: 18px
+            width: 18px
+            margin-right: 15px
+            img
+                width: 100%
+            .menu-mob__chosen-count
+                position: absolute
+                top: -100%
+                right: -15px
+                width: 17px
+                height: 17px
+                text-align: center
+                background: $primary
+                border-radius: 50%
+                color: #ffffff
+                font-size: 11px
+                +jm
+                line-height: 16px
+        &__chosen-link
+            color: $second
+            font-size: 14px
+    
+
 
     

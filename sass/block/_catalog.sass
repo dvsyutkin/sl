@@ -53,3 +53,20 @@
             color: $second
             &:hover
                 color: $primary
+
+@media ( max-width: 600px  )
+    .menu-mob
+        .catalog
+            &__item a
+                font-size: 16px
+                margin-bottom: 15px
+    .catalog
+        &__wrap
+            max-height: 100%
+            flex-direction: column
+        &__box
+            width: 100%
+            &:nth-child(odd)
+                margin-bottom: 10px
+
+            

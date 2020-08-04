@@ -310,19 +310,25 @@
                                     <path d="M23.0625 18.5625H0.9375C0.419719 18.5625 0 18.9822 0 19.5C0 20.0178 0.419719 20.4375 0.9375 20.4375H23.0625C23.5803 20.4375 24 20.0178 24 19.5C24 18.9822 23.5803 18.5625 23.0625 18.5625Z" fill="white"/>
                                 </svg>
                             </button>
-                        <div class="menu-mob">
-                            <p class="catalog__title">Меню</p>
-                            <ul class="catalog__list">
-                                <li class="catalog__item"><a href="#">Главная</a></li>
-                                <li class="catalog__item"><a href="#">О компании</a></li>
-                                <li class="catalog__item"><a href="#">Под заказ</a></li>
-                                <li class="catalog__item"><a href="#">Акции и новости</a></li>
-                                <li class="catalog__item"><a href="#">Эксклюзив</a></li>
-                                <li class="catalog__item"><a href="#">Доставка и оплата</a></li>
-                                <li class="catalog__item"><a href="#">Программа лояльности</a></li>
-                                <li class="catalog__item"><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
+                            <div class="menu-mob">
+                                <p class="catalog__title">Меню</p>
+                                <ul class="catalog__list">
+                                    <li class="catalog__item"><a href="#">Главная</a></li>
+                                    <li class="catalog__item"><a href="#">О компании</a></li>
+                                    <li class="catalog__item"><a href="#">Под заказ</a></li>
+                                    <li class="catalog__item"><a href="#">Акции и новости</a></li>
+                                    <li class="catalog__item"><a href="#">Эксклюзив</a></li>
+                                    <li class="catalog__item"><a href="#">Доставка и оплата</a></li>
+                                    <li class="catalog__item"><a href="#">Программа лояльности</a></li>
+                                    <li class="catalog__item"><a href="#">Контакты</a></li>
+                                </ul>
+                                <a href="#" class="menu-mob__login">Вход/Регистрация</a>
+                                <a href="tel:+79229667242" class="menu-mob__phone">+7 (922) 966 - 72 - 42</a>
+                                <div class="menu-mob__chosen-box">
+                                    <a href="#" class="menu-mob__chosen-img"><img src="img/heart.svg" alt=""><span class="menu-mob__chosen-count">2</span></a>
+                                    <a class="menu-mob__chosen-link" href="#">Избранные товары</a>
+                                </div>
+                            </div>
                         </div>
                         
 
@@ -416,12 +422,16 @@
         </section>
         <!-- /.section hero -->
 
-        <section  style="display: none;" class="section hits">
+        <section class="section hits">
             <div class="container">
                 <h2 class="section__title">Популярные категории</h2>
-                <div class="more"><a href="#">Перейти в каталог <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="more">
+                    <a href="#">Перейти в каталог 
+                        <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464466C20.9763 0.269204 20.6597 0.269204 20.4645 0.464466C20.2692 0.659728 20.2692 0.976311 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.7308 20.9763 7.7308 21.1716 7.53553L24.3536 4.35355ZM0 4.5H24V3.5H0V4.5Z" fill="#1B181D"/>
-                </svg></a></div>
+                        </svg>
+                    </a>
+                </div>
                 <div class="hits__wrap">
                     <div class="hits__left-box">
                         <div class="hits__box">
@@ -438,43 +448,37 @@
                     </div>
                     <div class="hits__right-box">
                         <div class="hits__right-top">
-                            <div class="hits__box hits__box_horiz">
-                                <div class="hits__inner">
-                                    <div class="hits__text-box">
-                                        <div class="hits__tag">Личный бренд</div>
-                                        <div class="hits__category">Аксессуары</div>
-                                    </div>
-                                    <div class="hits__box-img">
-                                        <img src="img/hits/hits-2.png" alt="">
-                                    </div>
+                            <div class="hits__box">
+                                <div class="hits__text-box">
+                                    <div class="hits__tag">Личный бренд</div>
+                                    <div class="hits__category">Аксессуары</div>
+                                </div>
+                                <div class="hits__box-img">
+                                    <img src="img/hits/hits-2.png" alt="">
                                 </div>
                                 <a class="hits__show-more" href="#">Показать больше <img src="img/arrow-grey.png" alt=""></a>
                             </div>
-                            <div class="hits__box hits__box_horiz mr-0">
-                                <div class="hits__inner">
-                                    <div class="hits__text-box">
-                                        <div class="hits__tag">Драгоценности</div>
-                                        <div class="hits__category">Украшения</div>
-                                    </div>
-                                    <div class="hits__box-img">
-                                        <img src="img/hits/hits-3.png" alt="">
-                                    </div>
+                            <div class="hits__box">
+                                <div class="hits__text-box">
+                                    <div class="hits__tag">Драгоценности</div>
+                                    <div class="hits__category">Украшения</div>
+                                </div>
+                                <div class="hits__box-img">
+                                    <img src="img/hits/hits-3.png" alt="">
                                 </div>
                                 <a class="hits__show-more" href="#">Показать больше <img src="img/arrow-grey.png" alt=""></a>
                             </div>
         
                         </div>
                         <div class="hits__right-bottom">
-                            <div class="hits__box mr-0">
-                                <div class="hits__inner">
-                                    <div class="hits__new">Новое поступление</div>
-                                    <div class="hits__text-box">
-                                        <div class="hits__tag">Мечта каждой женщины</div>
-                                        <div class="hits__category">Серьги и браслеты</div>
-                                    </div>
-                                    <div class="hits__box-img">
-                                        <img src="img/hits/hits-4.png" alt="">
-                                    </div>
+                            <div class="hits__box">
+                                <div class="hits__new">Новое поступление</div>
+                                <div class="hits__text-box">
+                                    <div class="hits__tag">Мечта каждой женщины</div>
+                                    <div class="hits__category">Серьги и браслеты</div>
+                                </div>
+                                <div class="hits__box-img">
+                                    <img src="img/hits/hits-4.png" alt="">
                                 </div>
                                 <a class="hits__show-more" href="#">Показать больше <img src="img/arrow-grey.png" alt=""></a>
                             </div>
@@ -482,12 +486,34 @@
                         </div>
 
                     </div>
+
+                </div>
+                <div class="hits__right-bottom hits__single-bottom">
+                    <div class="hits__box">
+                        <div class="hits__new">Новое поступление</div>
+                        <div class="hits__text-box">
+                            <div class="hits__tag">Мечта каждой женщины</div>
+                            <div class="hits__category">Серьги и браслеты</div>
+                        </div>
+                        <div class="hits__box-img">
+                            <img src="img/hits/hits-4.png" alt="">
+                        </div>
+                        <a class="hits__show-more" href="#">Показать больше <img src="img/arrow-grey.png" alt=""></a>
+                    </div>
+                <div class="more more-m">
+                    <a href="#">Перейти в каталог 
+                        <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464466C20.9763 0.269204 20.6597 0.269204 20.4645 0.464466C20.2692 0.659728 20.2692 0.976311 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.7308 20.9763 7.7308 21.1716 7.53553L24.3536 4.35355ZM0 4.5H24V3.5H0V4.5Z" fill="#1B181D"/>
+                        </svg>
+                    </a>
+                </div>
+    
                 </div>
             </div>
         </section>
         <!-- /.section hits -->
 
-        <section  style="display: none;" class="section tops">
+        <section  class="section tops">
             <div class="container">
                 <h2 class="section__title">ТОП - предложения</h2>
                 <div class="section__arrow-box">

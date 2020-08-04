@@ -42,18 +42,24 @@ window.addEventListener('DOMContentLoaded', function () {
             topsNext = document.querySelector('.tops .section__arrow_next');
     sliderTops.owlCarousel($.extend({}, {
         dots: true,
-        margin: 50,
         loop: true,
         center:true,
+        margin: 10,
         responsive: {
             0: {
                 items: 1,
+                center: true
             },
-            720: {
-                items: 3
+            600: {
+                items: 2
             },
-            960: {
-                items: 3.3
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3,
+                center:true,
+                margin: 10
             },
             1440: {
                 items: 4.5
@@ -110,17 +116,18 @@ window.addEventListener('DOMContentLoaded', function () {
         loop: true,
         center:true,
         responsive: {
-            0: {
+            600: {
                 items: 1,
+                margin: 0
             },
             720: {
-                items: 3
+                items: 4
             },
             960: {
-                items: 3.3
+                items: 4
             },
             1440: {
-                items: 4.5
+                items: 5
             }
         }
 

@@ -36,6 +36,11 @@ button
 .stock__wrap .owl-carousel .owl-stage-outer,
 .order__wrap .owl-carousel .owl-stage-outer
 	overflow: inherit
+.tops__wrap, .stock__wrap, .order__wrap
+	.owl-carousel .owl-item img
+		width: 100%
+		object-fit: contain
+		height: 100%
 
 	// owl slider
 .owl-theme .owl-nav.disabled+.owl-dots
@@ -82,4 +87,7 @@ button
 
 
 @media (max-width: 600px)
-	html
+	.section
+		margin-bottom: 7rem
+	.section__arrow-box
+		display: none

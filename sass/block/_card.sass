@@ -134,8 +134,25 @@
     background: url('../img/heart-red.svg') center no-repeat
     background-size: contain
 
-@media ( max-width: 970px )
+@media ( max-width: 992px )
     .card
         &__box
             &:hover
                 transform: translateY(0)
+
+@media ( max-width: 768px )
+    .card
+        &__box
+            width: 300px
+            height: 399px
+        &__img-box
+            height: 276px
+
+@media ( max-width: 600px )
+    .card
+        &__box
+            // width: 260px
+            margin: auto
+            height: 335px
+        &__img-box
+            height: 219px
