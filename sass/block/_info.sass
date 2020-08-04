@@ -1,11 +1,12 @@
 .info
+    overflow: hidden
     &__wrap
         max-width: 598px
         padding: 12rem 0
     &__subtitle
         margin-bottom: 2rem
         +al
-        font-size: 3rem
+        font-size: 30px
         color: $second
     &__title
         margin-bottom: 2.2rem
@@ -30,9 +31,6 @@
         text-decoration: underline
         &:hover
             text-decoration: none
-    
-        
-        
 
 .summer, .sapphire
     position: relative
@@ -63,3 +61,56 @@
     .info__wrap
         max-width: auto
         margin-left: 60%
+.info__bg_m
+    display: none
+    width: 100%
+
+@media ( max-width: 1300px )
+    .summer .info__banner
+        right: -5%
+
+@media ( max-width: 1200px )
+    .summer .info__banner
+        max-width: 50%
+
+@media ( max-width: 992px )
+    .info__title
+        font-size: 35px
+        line-height: 5rem
+    .info__wrap
+        max-width: 408px
+    .summer .info__banner p, .sapphire .info__banner p
+        font-size: 166px
+    .info__cit
+        font-size: 20px
+    .info__link
+        font-size: 14px
+    .summer .info__banner p
+        left: -290px
+
+@media (max-width: 768px)
+    .info__bg
+        display: none
+        &_m
+            display: block
+    .info__wrap
+        max-width: 544px
+    .summer .info__banner, .sapphire .info__banner
+        position: relative
+    .summer .info__banner
+        max-width: 100%
+        left: 0
+    .summer .info__banner p, .sapphire .info__banner p
+        top: -70px  
+        left: 50%
+        transform: rotate(0) translateX(-50%)
+    .info__cit-box
+        display: flex
+    
+@media (max-width: 600px)
+    .summer .info__banner p, .sapphire .info__banner p
+        font-size: 70px
+        top: -37px
+    .summer .info__banner
+        height: 300px;
+        object-fit: cover
