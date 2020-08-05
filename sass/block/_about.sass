@@ -6,16 +6,16 @@
     &__name
         margin-bottom: 2rem
         +al
-        font-size: 3rem
+        font-size: 30px
         color: $second
     &__title
         margin-bottom: 2rem
         +jr
-        font-size: 4.8rem
+        font-size: 48px
         color: $second
     &__text
         +jl
-        font-size: 2rem
+        font-size: 20px
         line-height: 3.1rem
         color: #4F4F4F
     &__galery
@@ -28,3 +28,49 @@
         background: url('../img/about-bg.jpg') no-repeat
         background-position-x: center
         color: #ffffff
+
+@media (max-width: 1200px)
+    .about
+        &__galery
+            padding: 120px 0
+            font-size: 185px
+            line-height: 143%
+
+@media (max-width: 992px)
+    .about
+        &__title
+            font-size: 25px
+        &__text
+            font-size: 18px
+
+@media (max-width: 768px)
+    .about
+        &__galery
+            font-size: 149px
+            line-height: 177%
+        &__title
+            font-size: 23px
+        &__text
+            font-size: 14px
+
+
+@media (max-width: 768px)
+    .about
+        &__name
+            font-size: 25px
+        &__title
+            font-size: 23px
+        &__text
+            font-size: 16px
+
+@media (max-width: 600px)
+    .about
+        &__desc
+            padding: 0 20px
+        &__galery
+            padding: 177px 0
+            margin-top: 3.5rem
+            font-size: 96px
+            line-height: 90%
+        &__text
+            font-size: 14px

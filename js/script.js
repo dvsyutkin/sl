@@ -48,7 +48,8 @@ window.addEventListener('DOMContentLoaded', function () {
         responsive: {
             0: {
                 items: 1,
-                center: true
+                center: true,
+                margin: 0
             },
             600: {
                 items: 2
@@ -80,18 +81,25 @@ window.addEventListener('DOMContentLoaded', function () {
             stockNext = document.querySelector('.stock .section__arrow_next');
     sliderStock.owlCarousel($.extend({}, {
         dots: true,
-        margin: 50,
         loop: true,
         center:true,
+        margin: 10,
         responsive: {
             0: {
                 items: 1,
+                center: true,
+                margin: 0
             },
-            720: {
-                items: 3
+            600: {
+                items: 2
             },
-            960: {
-                items: 3.3
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3,
+                center:true,
+                margin: 10
             },
             1440: {
                 items: 4.5
@@ -112,22 +120,28 @@ window.addEventListener('DOMContentLoaded', function () {
             orderNext = document.querySelector('.order .section__arrow_next');
     sliderOrder.owlCarousel($.extend({}, {
         dots: true,
-        margin: 50,
         loop: true,
         center:true,
+        margin: 10,
         responsive: {
-            600: {
+            0: {
                 items: 1,
+                center: true,
                 margin: 0
             },
-            720: {
-                items: 4
+            600: {
+                items: 2
             },
-            960: {
-                items: 4
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3,
+                center:true,
+                margin: 10
             },
             1440: {
-                items: 5
+                items: 4.5
             }
         }
 
@@ -143,6 +157,19 @@ window.addEventListener('DOMContentLoaded', function () {
     const selector = document.querySelector(".input-phone");
     let im = new Inputmask("+7 (999) 999 - 99 - 99");
     im.mask(selector);
+
+    // фоорма поиска моб. версии
+    const   searchMmobBtnClose = document.querySelector('.search-mob-btn-close'),
+            searchMobBox = document.querySelector('.search-mob__box'),
+            btnSearchMob = document.querySelector('.btn__search_m');
+
+
+    btnSearchMob.addEventListener('click', () =>{
+        searchMobBox.style.left = '0';
+    });
+    searchMmobBtnClose.addEventListener('click', () =>{
+        searchMobBox.style.left = '-100%';
+    });
 
 
 

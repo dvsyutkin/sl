@@ -1,8 +1,10 @@
 .info
+    position: relative
     overflow: hidden
     &__wrap
-        max-width: 598px
         padding: 12rem 0
+    &__text-box
+        max-width: 598px
     &__subtitle
         margin-bottom: 2rem
         +al
@@ -48,14 +50,14 @@
             color: #C4C4C4
 
 .summer
+    background: url('../img/bg-1.png') right center no-repeat
     .info__banner
-        right: 0
         p
-            left: -60%
+            display: none
 
 .sapphire
+    background: url('../img/bg-2.png') left center no-repeat
     .info__banner
-        left: 0
         p
             right: -60%
     .info__wrap
@@ -65,21 +67,42 @@
     display: none
     width: 100%
 
+
 @media ( max-width: 1300px )
-    .summer .info__banner
-        right: -5%
+    .sapphire .info__wrap
+        margin-left: 50%
+
 
 @media ( max-width: 1200px )
-    .summer .info__banner
-        max-width: 50%
+    .summer
+        background: url('../img/bg-1.png') right -150px center no-repeat
+    .sapphire
+        background: url('../img/bg-2.png') left -150px center no-repeat
+    .info__wrap
+        padding: 10rem 0
+
+@media ( max-width: 1080px )
+    .sapphire
+        background: url('../img/bg-2.png') left -50px center no-repeat
+    .sapphire .info__text-box
+        max-width: 100%
 
 @media ( max-width: 992px )
+    .summer
+        background: url('../img/bg-1.png') right -200px center no-repeat
+    .sapphire
+        background: url('../img/bg-2.png') left -200px center no-repeat
+    .summer, .sapphire
+        background-size: contain
+    .info__wrap
+        padding: 80px 0 50px
     .info__title
         font-size: 35px
         line-height: 5rem
-    .info__wrap
-        max-width: 408px
+    .info__text-box
+        max-width: 390px
     .summer .info__banner p, .sapphire .info__banner p
+        text-align: center
         font-size: 166px
     .info__cit
         font-size: 20px
@@ -89,11 +112,21 @@
         left: -290px
 
 @media (max-width: 768px)
+    .sapphire .info__wrap
+        margin-left: 0
+        max-width: 670px
+        padding-left: 15px
+        padding-right: 15px
+        margin: auto
+    .info__wrap 
+        padding-top: 0
+    .summer, .sapphire
+        background: none
     .info__bg
         display: none
         &_m
             display: block
-    .info__wrap
+    .info__text-box
         max-width: 544px
     .summer .info__banner, .sapphire .info__banner
         position: relative
@@ -101,12 +134,21 @@
         max-width: 100%
         left: 0
     .summer .info__banner p, .sapphire .info__banner p
+        display: block
         top: -70px  
         left: 50%
         transform: rotate(0) translateX(-50%)
-    .info__cit-box
-        display: flex
-    
+    .info__cit
+        margin: 0
+        margin-bottom: 10px
+        &-box
+            display: flex
+            margin: 40px 0
+            align-items: center
+            justify-content: space-between
+    .info__btn
+        margin-top: 0
+
 @media (max-width: 600px)
     .summer .info__banner p, .sapphire .info__banner p
         font-size: 70px
@@ -114,3 +156,26 @@
     .summer .info__banner
         height: 300px;
         object-fit: cover
+    .info__cit
+        margin: 0
+        margin-bottom: 10px
+        &-box
+            flex-direction: column
+    .info__btn
+        margin-top: 0
+    .info__subtitle
+        font-size: 21px
+        margin-bottom: 1rem 
+    .info__title
+        font-size: 25px
+        line-height: 4rem
+    .info__btn
+        width: 100%
+        margin-bottom: 30px
+        text-align: center
+    .info__cit-box
+        align-items: flex-start
+
+    @media (max-width: 380px)
+        .summer .info__banner
+            height: auto
