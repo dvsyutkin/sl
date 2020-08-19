@@ -171,6 +171,56 @@ window.addEventListener('DOMContentLoaded', function () {
         searchMobBox.style.left = '-100%';
     });
 
+    
+    // избранные
+    const   cardLike = document.querySelectorAll('.card__like '),
+            spanLike = document.querySelector('.chosen-count'),
+            spanLikeMob = document.querySelector('.menu-mob__chosen-count');
 
+    let count = 0;
+    cardLike.forEach(element => {
+        element.addEventListener('click', function() {
+            if(this.classList.contains('like')) {
+                this.classList.remove('like');
+                count -= 1;
+            } else {
+                this.classList.add('like');
+                count += 1;
+            }
+            spanLike.innerHTML = count;
+            spanLikeMob.innerHTML = count;
+        });
+        if(element.classList.contains('like')) {
+            count = count + 1;
+        }
+    });
 
+    spanLike.innerHTML = count;
+    spanLikeMob.innerHTML = count;
+
+    // кнопки меню и каталог товаров
+    const   catalogBtn = document.querySelector('.mob__catalog-btn-box '),
+            menuBtn = document.querySelector('.btn-menu'),
+            catalog = document.querySelectorAll('.catalog')[1],
+            menuMob = document.querySelector('.menu-mob');
+    
+    catalogBtn.addEventListener('click', function() {
+        if(catalog.classList.contains('catalog__visible')){
+            catalog.classList.remove('catalog__visible');
+            this.style.background = 'none';
+        } else {
+            catalog.classList.add('catalog__visible');
+            this.style.background = '#F02929';
+        }
+    });  
+
+    menuBtn.addEventListener('click', function() {
+        if(menuMob.classList.contains('menu-mob__visible')){
+            menuMob.classList.remove('menu-mob__visible');
+            this.style.background = 'none';
+        } else {
+            menuMob.classList.add('menu-mob__visible');
+            this.style.background = '#F02929';
+        }
+    });
 });

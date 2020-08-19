@@ -534,6 +534,9 @@ button {
   .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 2rem;
   }
+  .section {
+    margin-bottom: 8rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -842,7 +845,7 @@ button {
   transform: rotate(180deg);
 }
 
-.dropdown:hover .catalog {
+.nav__item.dropdown:hover .catalog {
   opacity: 1;
   visibility: visible;
 }
@@ -932,7 +935,7 @@ button {
   max-height: 104px;
 }
 
-.menu-mob__dropdown:hover .menu-mob {
+.menu-mob__visible {
   opacity: 1;
   visibility: visible;
 }
@@ -1732,6 +1735,7 @@ button {
 }
 
 .info__title {
+  max-width: 550px;
   margin-bottom: 2.2rem;
   font-family: 'JR', sans-serif;
   font-size: 4.8rem;
@@ -1771,6 +1775,7 @@ button {
 .summer .info__banner, .sapphire .info__banner {
   position: absolute;
   top: 0;
+  height: 100%;
 }
 
 .summer .info__banner p, .sapphire .info__banner p {
@@ -1784,8 +1789,8 @@ button {
   color: #C4C4C4;
 }
 
-.summer {
-  background: url("../img/bg-1.png") right center no-repeat;
+.summer .info__banner {
+  right: 0;
 }
 
 .summer .info__banner p {
@@ -1838,6 +1843,9 @@ button {
 }
 
 @media (max-width: 992px) {
+  .info {
+    padding-top: 20px;
+  }
   .summer {
     background: url("../img/bg-1.png") right -200px center no-repeat;
   }
@@ -2480,6 +2488,11 @@ button {
 
 .catalog__item a:hover {
   color: #F02929;
+}
+
+.catalog__visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 992px) {
