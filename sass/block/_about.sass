@@ -28,6 +28,7 @@
         background: url('../img/about-bg.jpg') no-repeat
         background-position-x: center
         color: #ffffff
+        white-space: nowrap
 
 @media (max-width: 1200px)
     .about
@@ -63,6 +64,11 @@
         &__text
             font-size: 16px
 
+@media (max-width: 660px)
+    .about__galery
+        font-size: 96px
+        white-space: normal
+
 @media (max-width: 600px)
     .about
         &__desc
@@ -70,7 +76,6 @@
         &__galery
             padding: 177px 0
             margin-top: 3.5rem
-            font-size: 96px
             line-height: 90%
         &__text
             font-size: 14px

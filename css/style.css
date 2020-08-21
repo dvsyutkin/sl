@@ -478,12 +478,6 @@ button {
   fill: #F02929;
 }
 
-.tops__wrap .owl-carousel .owl-stage-outer,
-.stock__wrap .owl-carousel .owl-stage-outer,
-.order__wrap .owl-carousel .owl-stage-outer {
-  overflow: inherit;
-}
-
 .tops__wrap .owl-carousel .owl-item img, .stock__wrap .owl-carousel .owl-item img, .order__wrap .owl-carousel .owl-item img {
   width: 100%;
   object-fit: contain;
@@ -517,14 +511,6 @@ button {
 
 .mr-0 {
   margin-right: 0 !important;
-}
-
-@media (max-width: 1440px) {
-  .tops__wrap .owl-carousel .owl-stage-outer,
-  .stock__wrap .owl-carousel .owl-stage-outer,
-  .order__wrap .owl-carousel .owl-stage-outer {
-    overflow: hidden;
-  }
 }
 
 @media (max-width: 992px) {
@@ -712,7 +698,7 @@ button {
   display: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   .form__search {
     position: absolute;
     top: 50%;
@@ -1794,11 +1780,7 @@ button {
 }
 
 .summer .info__banner p {
-  display: none;
-}
-
-.sapphire {
-  background: url("../img/bg-2.png") left center no-repeat;
+  left: -60%;
 }
 
 .sapphire .info__banner p {
@@ -1816,27 +1798,38 @@ button {
 }
 
 @media (max-width: 1300px) {
+  .info__wrap {
+    padding-bottom: 50px;
+    padding-top: 100px;
+  }
   .sapphire .info__wrap {
     margin-left: 50%;
   }
-}
-
-@media (max-width: 1200px) {
-  .summer {
-    background: url("../img/bg-1.png") right -150px center no-repeat;
+  .summer .info__banner, .sapphire .info__banner {
+    width: 410px;
   }
-  .sapphire {
-    background: url("../img/bg-2.png") left -150px center no-repeat;
+  .summer .info__banner .box-img, .sapphire .info__banner .box-img {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
-  .info__wrap {
-    padding: 10rem 0;
+  .summer .info__banner .box-img img, .sapphire .info__banner .box-img img {
+    position: absolute;
+    left: -27%;
+  }
+  .summer .info__banner p {
+    left: -70%;
+  }
+  .sapphire .info__banner p {
+    right: -70%;
+  }
+  .summer .info__banner p, .sapphire .info__banner p {
+    font-size: 166px;
   }
 }
 
 @media (max-width: 1080px) {
-  .sapphire {
-    background: url("../img/bg-2.png") left -50px center no-repeat;
-  }
   .sapphire .info__text-box {
     max-width: 100%;
   }
@@ -1845,15 +1838,6 @@ button {
 @media (max-width: 992px) {
   .info {
     padding-top: 20px;
-  }
-  .summer {
-    background: url("../img/bg-1.png") right -200px center no-repeat;
-  }
-  .sapphire {
-    background: url("../img/bg-2.png") left -200px center no-repeat;
-  }
-  .summer, .sapphire {
-    background-size: contain;
   }
   .info__wrap {
     padding: 80px 0 50px;
@@ -1875,12 +1859,18 @@ button {
   .info__link {
     font-size: 14px;
   }
-  .summer .info__banner p {
-    left: -290px;
+}
+
+@media (max-width: 910px) {
+  .sapphire .info__banner {
+    width: 355px;
+  }
+  .sapphire .info__banner p {
+    right: -80%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 842px) {
   .sapphire .info__wrap {
     margin-left: 0;
     max-width: 670px;
@@ -1894,17 +1884,22 @@ button {
   .summer, .sapphire {
     background: none;
   }
-  .info__bg {
-    display: none;
-  }
-  .info__bg_m {
-    display: block;
-  }
   .info__text-box {
     max-width: 544px;
   }
   .summer .info__banner, .sapphire .info__banner {
     position: relative;
+    width: 100%;
+  }
+  .summer .info__banner .box-img, .sapphire .info__banner .box-img {
+    position: relative;
+    height: 400px;
+  }
+  .summer .info__banner .box-img img, .sapphire .info__banner .box-img img {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: -30%;
   }
   .summer .info__banner {
     max-width: 100%;
@@ -1936,9 +1931,8 @@ button {
     font-size: 70px;
     top: -37px;
   }
-  .summer .info__banner {
+  .summer .info__banner .box-img, .sapphire .info__banner .box-img {
     height: 300px;
-    object-fit: cover;
   }
   .info__cit {
     margin: 0;
@@ -1971,6 +1965,9 @@ button {
 @media (max-width: 600px) and (max-width: 380px) {
   .summer .info__banner {
     height: auto;
+  }
+  .sapphire .info__banner .box-img img {
+    top: -17%;
   }
 }
 
@@ -2011,6 +2008,7 @@ button {
   background: url("../img/about-bg.jpg") no-repeat;
   background-position-x: center;
   color: #ffffff;
+  white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
@@ -2055,6 +2053,13 @@ button {
   }
 }
 
+@media (max-width: 660px) {
+  .about__galery {
+    font-size: 96px;
+    white-space: normal;
+  }
+}
+
 @media (max-width: 600px) {
   .about__desc {
     padding: 0 20px;
@@ -2062,7 +2067,6 @@ button {
   .about__galery {
     padding: 177px 0;
     margin-top: 3.5rem;
-    font-size: 96px;
     line-height: 90%;
   }
   .about__text {
